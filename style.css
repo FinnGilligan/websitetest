@@ -1,7 +1,7 @@
 body {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #fdfdfd;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fafafa;
   color: #222;
 }
 
@@ -35,10 +35,10 @@ p {
 }
 
 .project {
+  background-color: white;
   border: 1px solid #ddd;
-  border-radius: 10px;
+  border-radius: 8px;
   padding: 1rem;
-  background-color: #fff;
   box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 

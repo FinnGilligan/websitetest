@@ -6,7 +6,7 @@ const projects = [
   },
   {
     title: "RR Lyrae Star Classifier",
-    description: "Python tool to analyze RR Lyrae light curves using Lomb-Scargle.",
+    description: "Python tool analyzing RR Lyrae light curves using Lomb-Scargle periodograms.",
     link: "https://github.com/FinnGilligan"
   },
   {
@@ -15,5 +15,3 @@ const projects = [
     link: "https://github.com/FinnGilligan"
   }
 ];
-
-// Later: Use JavaScript to inject these into the DOM
