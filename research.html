@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Research | Finn Gilligan</title>
+  <style>
+    :root {
+      --mint: #a8e6cf;
+      --white: #ffffff;
+      --dark: #1a1a1a;
+      --accent: #ffd3b6;
+      --gray: #f5f5f5;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--gray);
+      color: var(--dark);
+    }
+
+    header {
+      background-color: var(--mint);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: var(--dark);
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .section {
+      background-color: var(--white);
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      margin-bottom: 2rem;
+    }
+
+    .section h3 {
+      margin-top: 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Finn Gilligan</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="robotics.html">Robotics</a>
+      <a href="cs.html">Computer Science</a>
+      <a href="research.html">Research</a>
+      <a href="math-tech.html">Outreach</a>
+      <a href="resume.html">Resume</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>Research</h2>
+
+    <div class="section">
+      <h3>Science Internship Program (UC Santa Cruz)</h3>
+      <p>Over the summer, I participated in SIP, a competitive 7-week astronomy research program. I studied RR Lyrae variable stars to help map the structure of the Milky Way, using Python for light curve analysis and a Lomb-Scargle periodogram for pulsation detection.</p>
+    </div>
+
+    <div class="section">
+      <h3>Villanova University Research</h3>
+      <p>Currently, I'm working with a professor at Villanova on binary star systems. This project builds on my earlier research and further develops my skills in data analysis and stellar astrophysics.</p>
+    </div>
+  </div>
+</body>
+</html>
