@@ -2,111 +2,121 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Welcome</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Finn Gilligan | Portfolio</title>
   <style>
+    :root {
+      --mint: #a8e6cf;
+      --white: #ffffff;
+      --dark: #1a1a1a;
+      --accent: #ffd3b6;
+      --gray: #f5f5f5;
+    }
+
     body {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f9f9fc;
-      color: #333;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--gray);
+      color: var(--dark);
     }
 
-    .navbar {
-      background-color: #003366;
-      padding: 1rem;
+    header {
+      background-color: var(--mint);
+      padding: 1rem 2rem;
       display: flex;
-      justify-content: center;
-      gap: 2rem;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
     }
 
-    .navbar a {
-      color: #ffffff;
+    header h1 {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+
+    nav a {
+      margin: 0 1rem;
       text-decoration: none;
-      font-weight: 600;
-      font-size: 1.1rem;
+      color: var(--dark);
+      font-weight: bold;
       transition: color 0.3s;
     }
 
-    .navbar a:hover {
-      color: #ffa500;
+    nav a:hover {
+      color: var(--accent);
     }
 
-    .hero {
-      background-color: #e6f0ff;
-      padding: 3rem 1rem;
+    .container {
+      max-width: 960px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+    }
+
+    .intro {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background-color: var(--white);
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s, box-shadow 0.2s;
       text-align: center;
     }
 
-    .hero h1 {
-      font-size: 2.5rem;
-      color: #003366;
-      margin-bottom: 1rem;
-    }
-
-    .hero p {
-      font-size: 1.2rem;
-      max-width: 700px;
-      margin: 0 auto;
-      line-height: 1.6;
-    }
-
-    .links-section {
-      padding: 2rem;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 2rem;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    .link-card {
-      background-color: white;
-      padding: 1.5rem 2rem;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.07);
-      text-align: center;
-      width: 250px;
-      transition: transform 0.3s ease;
-    }
-
-    .link-card:hover {
+    .card:hover {
       transform: translateY(-5px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     }
 
-    .link-card a {
+    .card a {
       text-decoration: none;
-      color: #003366;
-      font-weight: bold;
-      font-size: 1.2rem;
+      color: var(--dark);
+      font-size: 1.1rem;
+      font-weight: 600;
     }
   </style>
 </head>
 <body>
-  <div class="navbar">
-    <a href="index.html">Home</a>
-    <a href="robotics.html">Robotics</a>
-    <a href="csseminar.html">CS Seminar</a>
-    <a href="csclub.html">CS Club</a>
-  </div>
-
-  <div class="hero">
-    <h1>Welcome!</h1>
-    <p>
-      I'm a high school student passionate about mathematics, science, and especially computer science. Over the past few years, I've built apps, conducted research, competed in national tech events, and stayed active through leadership roles in clubs and my job as a lifeguard. This site highlights a few of the things I've worked on.
-    </p>
-  </div>
-
-  <div class="links-section">
-    <div class="link-card">
+  <header>
+    <h1>Finn Gilligan</h1>
+    <nav>
+      <a href="index.html">Home</a>
       <a href="robotics.html">Robotics</a>
+      <a href="cs.html">Computer Science</a>
+      <a href="research.html">Research</a>
+      <a href="math-tech.html">Outreach</a>
+      <a href="resume.html">Resume</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="intro">
+      <h2>Welcome!</h2>
+      <p>
+        I’m a high school student with a passion for mathematics, computer science,
+        and engineering. I’ve taken on challenges in the classroom, on my robotics team,
+        and through personal projects and internships. This site highlights my
+        work and interests as I explore the intersection of STEM and real-world impact.
+      </p>
     </div>
-    <div class="link-card">
-      <a href="csseminar.html">CS Seminar</a>
-    </div>
-    <div class="link-card">
-      <a href="csclub.html">CS Club</a>
+
+    <div class="card-grid">
+      <div class="card"><a href="robotics.html">Robotics</a></div>
+      <div class="card"><a href="cs.html">CS Seminar & Club</a></div>
+      <div class="card"><a href="research.html">Research</a></div>
+      <div class="card"><a href="math-tech.html">Outreach</a></div>
+      <div class="card"><a href="resume.html">Resume</a></div>
     </div>
   </div>
 </body>
