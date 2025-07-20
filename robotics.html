@@ -2,68 +2,121 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Robotics - My Extracurriculars</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Robotics | Finn Gilligan</title>
   <style>
+    :root {
+      --mint: #a8e6cf;
+      --white: #ffffff;
+      --dark: #1a1a1a;
+      --accent: #ffd3b6;
+      --gray: #f5f5f5;
+    }
+
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--gray);
+      color: var(--dark);
     }
-    nav {
-      background-color: #0047ab;
-      padding: 10px;
+
+    header {
+      background-color: var(--mint);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
     }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+
     nav a {
-      color: white;
-      margin-right: 20px;
+      margin: 0 1rem;
       text-decoration: none;
+      color: var(--dark);
       font-weight: bold;
-      font-size: 18px;
+      transition: color 0.3s;
     }
+
     nav a:hover {
-      text-decoration: underline;
+      color: var(--accent);
     }
+
     .container {
-      padding: 20px;
+      max-width: 960px;
+      margin: 3rem auto;
+      padding: 0 1rem;
     }
-    h1 {
-      color: #0047ab;
+
+    h2 {
+      text-align: center;
+      margin-bottom: 2rem;
     }
-    .project {
-      margin-bottom: 20px;
+
+    .section {
+      background-color: var(--white);
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      margin-bottom: 2rem;
     }
-    .project h2 {
-      margin-bottom: 5px;
-    }
-    .project p {
+
+    .section h3 {
       margin-top: 0;
     }
   </style>
 </head>
 <body>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="robotics.html">Robotics</a>
-    <a href="csclub.html">Computer Science Club</a>
-    <a href="csseminar.html">Computer Science Seminar</a>
-  </nav>
+  <header>
+    <h1>Finn Gilligan</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="robotics.html">Robotics</a>
+      <a href="cs.html">Computer Science</a>
+      <a href="research.html">Research</a>
+      <a href="math-tech.html">Outreach</a>
+      <a href="resume.html">Resume</a>
+    </nav>
+  </header>
 
   <div class="container">
-    <h1>Robotics (FRC Team 1712 - DAWGMA)</h1>
+    <h2>Robotics</h2>
 
-    <div class="project">
-      <h2>2025 Reefscape Robot</h2>
-      <p>Designed and programmed autonomous routines using Limelight and AprilTags for precise alignment and scoring algae efficiently. Helped lead electrical wiring and driver-assist development.</p>
+    <div class="section">
+      <h3>Leadership Roles</h3>
+      <p>As Director of Engineering (25–26) and Control Systems Officer (24-25) for <strong>Dawgma: FRC Team 1712</strong>, I helped lead strategic design reviews, coordinated subsystem development, and managed the programming and electronics team.</p>
     </div>
 
-    <div class="project">
-      <h2>Offseason Code Development</h2>
-      <p>Refactored and improved autonomous code and implemented sensor fusion techniques for improved pose estimation and control accuracy.</p>
+    <div class="section">
+      <h3>Team Achievements</h3>
+      <ul>
+        <li><strong>FIRST Impact Award</strong> – District Qualifier (10th grade)</li>
+        <li><strong>Engineering Inspiration Award</strong> – District Event (11th grade)</li>
+        <li><strong>Industrial Design Award</strong> – District Event (11th grade)</li>
+        <li><strong>District Championship Qualifier</strong> – (9th grade, 11th grade)</li>
+      </ul>
     </div>
 
-    <div class="project">
-      <h2>Outreach and Mentoring</h2>
-      <p>Organized STEM outreach with Judith Creed Horizons for Achieving Independence and mentored local FIRST LEGO League teams to promote robotics education.</p>
+    <div class="section">
+      <h3>Technical Contributions</h3>
+      <p>I focused on control systems and automation, including:</p>
+      <ul>
+        <li>Vision-based alignment using AprilTags</li>
+        <li>Custom motion profiling and auto routines</li>
+        <li>Driver-assist controls for precision scoring</li>
+        <li>Electrical board layout and sensor integration</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h3>Community & Diversity Impact</h3>
+      <p>Our outreach efforts, especially in underserved communities and with students with disabilities, were central to earning the <strong>FIRST Impact Award</strong>. I helped organize robotics demos, mentor younger teams, and lead initiatives focused on inclusive STEM access.</p>
     </div>
   </div>
 </body>
